@@ -12,6 +12,7 @@ describe('Test case for contact us form', () => {
     });
     it('should not submit the form', () => {
         cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html') 
+        cy.get('[name="first_name"]').type("Anuj")
         cy.get ('[type="Submit"]').click()
         
     });
