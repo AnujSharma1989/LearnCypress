@@ -8,7 +8,7 @@ describe('Test case for contact us form', () => {
        cy.get('[name="last_name"]').type("Sharma")
        cy.get('[name="email"]').type("test@gmail.com")
        cy.get('textarea.feedback-input').type("Sample text entered")
-       cy.get ('[type="Submit"]').click({force:true})
+       cy.get ('[type="Submit"]').click()
     });
     it('should not submit the form', () => {
         cy.visit('http://www.webdriveruniversity.com/Contact-Us/contactus.html') 
